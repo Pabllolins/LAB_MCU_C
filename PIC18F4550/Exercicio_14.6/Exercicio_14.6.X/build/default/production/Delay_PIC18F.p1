@@ -1,0 +1,261 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"35 Delay_PIC18F.c
+[; ;Delay_PIC18F.c: 35: void tempo(unsigned char a){
+[v _tempo `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _tempo ]
+[v _a `uc ~T0 @X0 1 r1 ]
+[f ]
+"36
+[; ;Delay_PIC18F.c: 36:     volatile unsigned char i, j, k;
+[v _i `Vuc ~T0 @X0 1 a ]
+[v _j `Vuc ~T0 @X0 1 a ]
+[v _k `Vuc ~T0 @X0 1 a ]
+"37
+[; ;Delay_PIC18F.c: 37:     for (i = 0; i<a; i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 5  ]
+[e :U 2 ]
+{
+"38
+[; ;Delay_PIC18F.c: 38:         for(j = 0; j < 100; j++){
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 100 `i 6  ]
+[e $U 7  ]
+[e :U 6 ]
+{
+"39
+[; ;Delay_PIC18F.c: 39:             for(k = 0; k < 8; k++);
+{
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 8 `i 9  ]
+[e $U 10  ]
+[e :U 9 ]
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 8 `i 9  ]
+[e :U 10 ]
+}
+"40
+[; ;Delay_PIC18F.c: 40:         }
+}
+[e ++ _j -> -> 1 `i `Vuc ]
+[e $ < -> _j `i -> 100 `i 6  ]
+[e :U 7 ]
+}
+"41
+[; ;Delay_PIC18F.c: 41:     }
+}
+[e ++ _i -> -> 1 `i `Vuc ]
+[e :U 5 ]
+[e $ < -> _i `i -> _a `i 2  ]
+[e :U 3 ]
+}
+"42
+[; ;Delay_PIC18F.c: 42: }
+[e :UE 1 ]
+}
+"44
+[; ;Delay_PIC18F.c: 44: void MeioSegundo(){
+[v _MeioSegundo `(v ~T0 @X0 1 ef ]
+{
+[e :U _MeioSegundo ]
+[f ]
+"45
+[; ;Delay_PIC18F.c: 45: volatile unsigned char h, i, j, k;
+[v _h `Vuc ~T0 @X0 1 a ]
+[v _i `Vuc ~T0 @X0 1 a ]
+[v _j `Vuc ~T0 @X0 1 a ]
+[v _k `Vuc ~T0 @X0 1 a ]
+"46
+[; ;Delay_PIC18F.c: 46:         for (i = 0; i<100; i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 13  ]
+[e $U 14  ]
+[e :U 13 ]
+{
+"47
+[; ;Delay_PIC18F.c: 47:                 for(j = 0; j < 98; j++){
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 98 `i 16  ]
+[e $U 17  ]
+[e :U 16 ]
+{
+"48
+[; ;Delay_PIC18F.c: 48:                     for(k = 0; k < 15; k++);
+{
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 15 `i 19  ]
+[e $U 20  ]
+[e :U 19 ]
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 15 `i 19  ]
+[e :U 20 ]
+}
+"53
+[; ;Delay_PIC18F.c: 53:             }
+}
+[e ++ _j -> -> 1 `i `Vuc ]
+[e $ < -> _j `i -> 98 `i 16  ]
+[e :U 17 ]
+}
+"54
+[; ;Delay_PIC18F.c: 54:         }
+}
+[e ++ _i -> -> 1 `i `Vuc ]
+[e $ < -> _i `i -> 100 `i 13  ]
+[e :U 14 ]
+}
+"55
+[; ;Delay_PIC18F.c: 55: }
+[e :UE 12 ]
+}
+"57
+[; ;Delay_PIC18F.c: 57: void tempoSegundos(unsigned char segundos){
+[v _tempoSegundos `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _tempoSegundos ]
+[v _segundos `uc ~T0 @X0 1 r1 ]
+[f ]
+"58
+[; ;Delay_PIC18F.c: 58:     volatile unsigned char h, i, j, k, l;
+[v _h `Vuc ~T0 @X0 1 a ]
+[v _i `Vuc ~T0 @X0 1 a ]
+[v _j `Vuc ~T0 @X0 1 a ]
+[v _k `Vuc ~T0 @X0 1 a ]
+[v _l `Vuc ~T0 @X0 1 a ]
+"59
+[; ;Delay_PIC18F.c: 59:     for(l=0; l<segundos; l++){
+{
+[e = _l -> -> 0 `i `uc ]
+[e $U 26  ]
+[e :U 23 ]
+{
+"60
+[; ;Delay_PIC18F.c: 60:         for(h = 0; h<10; h++){
+{
+[e = _h -> -> 0 `i `uc ]
+[e $ < -> _h `i -> 10 `i 27  ]
+[e $U 28  ]
+[e :U 27 ]
+{
+"61
+[; ;Delay_PIC18F.c: 61:             for (i = 0; i<100; i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 100 `i 30  ]
+[e $U 31  ]
+[e :U 30 ]
+{
+"62
+[; ;Delay_PIC18F.c: 62:                 for(j = 0; j < 100; j++){
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 100 `i 33  ]
+[e $U 34  ]
+[e :U 33 ]
+{
+"63
+[; ;Delay_PIC18F.c: 63:                     for(k = 0; k < 9; k++);
+{
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 9 `i 36  ]
+[e $U 37  ]
+[e :U 36 ]
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 9 `i 36  ]
+[e :U 37 ]
+}
+"64
+[; ;Delay_PIC18F.c: 64:                 }
+}
+[e ++ _j -> -> 1 `i `Vuc ]
+[e $ < -> _j `i -> 100 `i 33  ]
+[e :U 34 ]
+}
+"65
+[; ;Delay_PIC18F.c: 65:             }
+}
+[e ++ _i -> -> 1 `i `Vuc ]
+[e $ < -> _i `i -> 100 `i 30  ]
+[e :U 31 ]
+}
+"66
+[; ;Delay_PIC18F.c: 66:         }
+}
+[e ++ _h -> -> 1 `i `Vuc ]
+[e $ < -> _h `i -> 10 `i 27  ]
+[e :U 28 ]
+}
+"67
+[; ;Delay_PIC18F.c: 67:     }
+}
+[e ++ _l -> -> 1 `i `Vuc ]
+[e :U 26 ]
+[e $ < -> _l `i -> _segundos `i 23  ]
+[e :U 24 ]
+}
+"68
+[; ;Delay_PIC18F.c: 68: }
+[e :UE 22 ]
+}
+"70
+[; ;Delay_PIC18F.c: 70: void UmSegundo(){
+[v _UmSegundo `(v ~T0 @X0 1 ef ]
+{
+[e :U _UmSegundo ]
+[f ]
+"71
+[; ;Delay_PIC18F.c: 71: volatile unsigned char h, i, j, k;
+[v _h `Vuc ~T0 @X0 1 a ]
+[v _i `Vuc ~T0 @X0 1 a ]
+[v _j `Vuc ~T0 @X0 1 a ]
+[v _k `Vuc ~T0 @X0 1 a ]
+"72
+[; ;Delay_PIC18F.c: 72:         for (i = 0; i<200; i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 200 `i 40  ]
+[e $U 41  ]
+[e :U 40 ]
+{
+"73
+[; ;Delay_PIC18F.c: 73:                 for(j = 0; j < 98; j++){
+{
+[e = _j -> -> 0 `i `uc ]
+[e $ < -> _j `i -> 98 `i 43  ]
+[e $U 44  ]
+[e :U 43 ]
+{
+"74
+[; ;Delay_PIC18F.c: 74:                     for(k = 0; k < 15; k++);
+{
+[e = _k -> -> 0 `i `uc ]
+[e $ < -> _k `i -> 15 `i 46  ]
+[e $U 47  ]
+[e :U 46 ]
+[e ++ _k -> -> 1 `i `Vuc ]
+[e $ < -> _k `i -> 15 `i 46  ]
+[e :U 47 ]
+}
+"79
+[; ;Delay_PIC18F.c: 79:             }
+}
+[e ++ _j -> -> 1 `i `Vuc ]
+[e $ < -> _j `i -> 98 `i 43  ]
+[e :U 44 ]
+}
+"80
+[; ;Delay_PIC18F.c: 80:         }
+}
+[e ++ _i -> -> 1 `i `Vuc ]
+[e $ < -> _i `i -> 200 `i 40  ]
+[e :U 41 ]
+}
+"81
+[; ;Delay_PIC18F.c: 81: }
+[e :UE 39 ]
+}
