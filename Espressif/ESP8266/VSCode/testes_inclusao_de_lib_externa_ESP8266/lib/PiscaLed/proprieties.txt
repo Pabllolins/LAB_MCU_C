@@ -1,0 +1,9 @@
+name=PiscaLed
+version=1.0.0
+author=Mateus Dias
+maintainer=Pabllo Lins
+sentence=Pisca o Led no formato Blink
+paragraph= a
+category=Signal
+url=
+architectures=avr
