@@ -8,3 +8,5 @@ Os códigos e projetos com PIC18F4550 são baseados nas disciplinas ECOP04 e ECO
 Microcontroladores PIC18 - Aprenda e programe em linguagem C - Alberto Noburu Miyadara.
 
 Programação de Sistemas embarcados - Desenvolvendo software para microcontroladores em linguagem C - ALMEIDA - MORAES - SERAPHIM
+
+E inspirados nas aulas do Youtube do Rodrigo Maximiano Antunes de Almeida
