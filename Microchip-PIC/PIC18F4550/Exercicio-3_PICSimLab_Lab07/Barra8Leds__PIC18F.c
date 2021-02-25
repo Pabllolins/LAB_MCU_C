@@ -1,9 +1,16 @@
-/*
- * File:   controle_led.c
- * Author: PablloLins
- *
- * Created on 9 de Fevereiro de 2021, 23:17
- */
+// -----------------------------------------------------------------------
+//   Arquivo: CBarra8Leds__PIC18F.c
+//            
+//   Co-Autor:   Pabllo Lins
+//   Data: 09/02/2021
+//   Arquivo de biblioteca baseado na biblioteca do autor abaixo
+//
+// -----------------------------------------------------------------------
+//   Copyright (C) Rodrigo Almeida 2014
+//   Autor:   Rodrigo Maximiano Antunes de Almeida
+//            rodrigomax at unifei.edu.br
+//   Licença: GNU GPL 2
+// -----------------------------------------------------------------------
 
 #include "Barra8Leds__PIC18F.h"
 //#include <pic18f4550.h>

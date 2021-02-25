@@ -1,3 +1,17 @@
+// -----------------------------------------------------------------------
+//   Arquivo: Init_PIC18F.c
+//            
+//   Co-Autor:   Pabllo Lins
+//   Data: 08/12/2020
+//   Arquivo de biblioteca baseado na biblioteca do autor abaixo
+//
+// -----------------------------------------------------------------------
+//   Copyright (C) Rodrigo Almeida 2014
+//   Autor:   Rodrigo Maximiano Antunes de Almeida
+//            rodrigomax at unifei.edu.br
+//   Licen√ßa: GNU GPL 2
+// -----------------------------------------------------------------------
+
 #include "Init_PIC18F.h"
 #include <xc.h>
 
@@ -15,9 +29,9 @@ put the contents of the output latch on the selected pin).
 
 void SentidoPortas(void){ //associa os pinos 
     //TRISA = 0x00; // 
-    //TRISB = 0xF0; // 
+    //TRISB = 0xF0; // 0b11110000; --> Seta os bits B0 a B3 como saida e B4 a B7 como entrada
     //TRISC = 0x00; //
-      TRISD = 0x00; //Copnfigura a porta D como saida
+    //TRISD = 0x00; //
     //TRISE = 0x00; //
 }
 
@@ -25,7 +39,7 @@ void SetupPortas(void){
     //PORTA = 0x00; //
     //PORTB = 0x00; //
     //PORTC = 0x00; //
-      PORTD = 0xFF; // Inicia com os leds desligados (LÛgica invertida)
+    //PORTD = 0x00; //
     //PORTE = 0x00; //
 }	
 
